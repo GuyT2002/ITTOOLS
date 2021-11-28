@@ -1,0 +1,12 @@
+[proxy]
+10.0.7.200
+
+[webservers]
+10.0.7.101 hostname=server1
+10.0.7.102 hostname=server2
+
+[all:vars]
+ansible_user=automation
+ansible_password=
+ansible_become_user=root
+ansible_become_password=havita22

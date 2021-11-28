@@ -1,0 +1,10 @@
+---
+- name: install httpd
+  package:
+    name: httpd
+    state: present
+
+- name: install keepalived
+  package:
+    name: keepalived
+    state: present

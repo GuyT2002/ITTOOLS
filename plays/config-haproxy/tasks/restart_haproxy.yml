@@ -1,0 +1,5 @@
+---
+- name: restart the haproxy service after the node is ready
+  service:
+    name: haproxy
+    state: restarted

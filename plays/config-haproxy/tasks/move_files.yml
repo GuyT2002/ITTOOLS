@@ -1,0 +1,6 @@
+---
+- name: move config file to the right place on the HAPROXY node
+  copy:
+    src: /home/automation/plays/config-haproxy/files/haproxy.cfg
+    dest: /etc/haproxy/haproxy.cfg
+    mode: 0646

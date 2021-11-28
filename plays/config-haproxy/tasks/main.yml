@@ -1,0 +1,9 @@
+---
+- name: install the haproxy service on the node
+  import_tasks: install_haproxy.yml
+
+- name: move all files to the HAPROXY node
+  import_tasks: move_files.yml
+
+- name: restart the HAPROXY service
+  import_tasks: restart_haproxy.yml

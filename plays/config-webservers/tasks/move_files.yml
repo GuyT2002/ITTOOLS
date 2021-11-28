@@ -1,0 +1,19 @@
+---
+- name: move index.html to the server
+  copy:
+    src: /home/automation/plays/config-webservers/files/{{hostname}}/index.html
+    dest: /var/www/html/index.html
+    owner: root
+    group: root
+
+- name: move keepalived.conf to the server
+  copy:
+    src: /home/automation/plays/config-webservers/files/{{hostname}}/keepalived.conf
+    dest: /etc/keepalived/keepalived.conf
+    mode: 0666
+
+- name: move keepalived health script to the server
+  copy:
+    src: /home/automation/plays/config-webservers/files/{{hostname}}/check.sh
+    dest: /etc/keepalived/check.sh
+    mode: 0757
