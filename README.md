@@ -21,3 +21,7 @@ we need to move a few things:
 the HAproxy configuration files for HAproxy and keepalived.
 next, the keepalived health check (which we use!)
 also, we need to mode the nameD configratuion and db files.
+
+to run it, we just call the final playbook "configure_web_haproxy.yml"
+and it will run the playbook right for the members of the groups 'webservers' and 'proxy'
+within the local inventory file.
