@@ -1,9 +1,0 @@
----
-- name: install the haproxy and keepalived services on the node
-  import_tasks: install_services.yml
-
-- name: move all files to the HAPROXY node
-  import_tasks: move_files.yml
-
-- name: restart the HAPROXY and KEEPALIVED services
-  import_tasks: restart_services.yml

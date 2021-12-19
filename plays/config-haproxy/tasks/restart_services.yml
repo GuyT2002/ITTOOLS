@@ -1,9 +1,0 @@
----
-- name: restart the haproxy service after the node is ready
-  service:
-    name: "{{item}}"
-    state: restarted
-  with_items:
-    - haproxy
-    - keepalived
-    - named
