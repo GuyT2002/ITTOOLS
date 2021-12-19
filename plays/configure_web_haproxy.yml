@@ -1,8 +1,0 @@
----
-  - hosts: all
-    become: true
-    roles:
-      - {"role": config-webservers, "when": 'inventory_hostname in groups["webservers"]'}
-
-      - {"role": config-haproxy, "when": "inventory_hostname in groups['proxy']"}
-
