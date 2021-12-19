@@ -1,5 +1,0 @@
-[all:vars]
-ansible_user=automation
-ansible_password=
-ansible_become_user=root
-ansible_become_password=********
