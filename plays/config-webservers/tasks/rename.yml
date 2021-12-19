@@ -1,8 +1,0 @@
----
-- name: stat ssl file, to move only if exists
-  stat: path=/etc/httpd/conf.d/ssl.conf
-  register: ssl_stat
-
-- name: Move ssl to ssl.bzk so it won't block us from using https in httpd
-  command: mv /etc/httpd/conf.d/ssl.conf /etc/httpd/conf.d/ssl.conf.bak
-  when: ssl_stat.stat.exists
